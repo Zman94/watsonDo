@@ -158,6 +158,37 @@ function callGoogle(location, categories){
     });
   }
 }
+
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+/**bodyParser.json(options)
+ * Parses the text as JSON and exposes the resulting object on req.body.
+ */
+app.use(bodyParser.json());
+
+app.post("/", function (req, res) {
+    console.log(req.body.activity)
+    var jsonObj = {'activity': req.body.activity };
+    jsonObj.address = req.body.address;
+    jsonObj.open_hours = req.body.open_hours;
+    jsonObj.website = req.body.website;
+    jsonObj.phone_num = req.body.phone_num;
+    suggestionsOthers[0] = jsonObj;
+
+    console.log(jsonObj);
+
+    res.render('index.ejs', { temp: msgs , suggestionsYelp: suggestionsYelp, suggestionsGoogle: suggestionsGoogle, suggestionsOthers: suggestionsOthers });
+    // app.get('/', function (req, res) {
+    //   // res.render('index.ejs', { temp: msg, });
+    //   res.render('index.ejs', { temp: msgs , suggestionsYelp: suggestionsYelp, suggestionsGoogle: suggestionsGoogle, suggestionsOthers: suggestionsOthers});
+    // });
+    console.log(suggestionsOthers);
+    console.log(suggestionsYelp);
+
+});
+
 function getRestaurantsGoogle(locWithPlus){
     var restsoptions = {
     host: 'maps.googleapis.com',
