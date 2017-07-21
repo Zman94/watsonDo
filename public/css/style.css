@@ -1,0 +1,131 @@
+body{
+background-color: #e6e6e6;
+}
+
+.watson-head{
+   font-size: 350%;
+   margin: 5px auto;
+   text-align: center;
+}
+
+nav{
+   background-color: #fff;
+   border: 2px solid #d9d9d9;
+}
+
+.row{
+    margin: 5px auto;
+    max-width: 1300px;
+    margin-bottom: 75px;    
+}
+
+button, #button {
+    list-style: none;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #2154AC;
+    border-radius: 5px;
+    font-size: 24px;
+  
+    position: relative;
+    margin-left:20px;
+}
+
+input {
+   margin-top: 40px;
+   width: 70%;
+   border: none;
+   border-bottom: 2px solid #d9d9d9;
+   padding: 10px 50px;
+   position: relative;
+   font-size: 24px;
+   margin-left: 20px;  
+   transition: border-bottom .5s;
+}
+
+input:hover,
+input:active{
+   border-bottom 2px solid #000;
+   transition: border-bottom .5s;
+}
+
+.white-box{
+   margin-top: 10px;
+   background-color: white;
+   border-radius: 5px;
+   border: 2px solid #d9d9d9;
+   
+}
+
+h3{
+   text-align:center;
+}
+
+.center-it{
+   width: 90%;
+}
+
+.text-box{
+   margin-top: 40px;
+   background-color: white;
+   border-radius: 5px;
+   border: 2px solid #d9d9d9;
+}
+
+.msg{
+   padding: 10px 10px;
+   background-color: #2154AC;
+   border-radius: 5px;
+   border: 1px solid #d9d9d9;
+   margin: 10px 0px;
+   margin-left: 150px;
+   margin-right: 10px;
+   color: white;
+   font-size: 24px;
+}
+
+.msg-grey{
+   padding: 10px 10px;
+   background-color: #fff;
+   border-radius: 5px;
+   border: 1px solid #d9d9d9;
+   margin: 10px 0px;
+   margin-right: 150px;
+   margin-left: 10px;
+   color: black;
+   font-size: 24px;
+}
+
+.output{
+   font-size: 18px;
+   margin: 5px 0;
+   
+}
+
+.sugg-box{
+   background-color: white;
+   border-radius: 5px;
+   border: 2px solid #d9d9d9;
+   margin-top: 10px;
+
+}
+
+.input-box{
+   background-color: white;
+   border-radius: 5px;
+   border: 2px solid #d9d9d9;
+}
+
+hr{
+   width: 80%;
+   margin-bottom: 50px;
+   color: #d9d9d9;
+}
+
+.input-box input{
+   width: 95%;
+   margin-left: 20px;
+}
